@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 // Usar las rutas de producción
-app.use('/api/production', productionRoutes);
+app.use('/api/produccion', productionRoutes);
 
 // Puerto
 const PORT = process.env.PORT || 3000;
