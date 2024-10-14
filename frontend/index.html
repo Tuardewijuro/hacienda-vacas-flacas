@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Producción de Leche</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Producción de Leche</h1>
+
+    <div id="contenedor">
+        <input type="number" id="numVacas" placeholder="Número de vacas" min="3" max="50" />
+        <button id="crearMatriz">Crear Matriz</button>
+        <button id="verProduccionTotal">Ver Producción Total</button>
+    </div>
+
+    <div id="ingresoProduccion" style="display:none;">
+        <h2>Ingresar Producción Diaria</h2>
+        <label for="dia">Día de la Semana (1-7):</label>
+        <input type="number" id="dia" placeholder="Día (1-7)" min="1" max="7">
+        <div id="vacasContainer"></div>
+        <button id="ingresarProduccion">Ingresar Producción</button>
+    </div>
+
+    <div id="reportes">
+        <h2>Consultas y Reportes</h2>
+        <button id="verVacaTopDia">Ver Vaca Top por Día</button>
+        <button id="verMaxMinProduccion">Ver Mayor y Menor Producción</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

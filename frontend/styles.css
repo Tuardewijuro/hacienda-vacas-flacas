@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+#contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#numVacas {
+    width: 150px;
+    padding: 5px; 
+    font-size: 16px;
+}
+#vacasContainer input {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#dia {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+#ingresoProduccion label {
+    display: inline-block;
+    width: 80px;
+    text-align: right; 
+    margin-right: 10px; 
+}
+#ingresarProduccion {
+    margin-top: 20px;
+}

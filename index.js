@@ -1,28 +1,21 @@
 const express = require('express');
+const cors = require('cors');
 const dotenv = require('dotenv');
 const productionRoutes = require('./routes/rutas-produccion');
 
-// Cargar las variables de entorno
 dotenv.config();
 
-// Crear una instancia de Express
 const app = express();
 
-// Middleware para manejar JSON
 app.use(express.json());
+app.use(cors());
 
-// Ruta de prueba
-app.get('/', (req, res) => {
-  res.send('API de Hacienda Las 7 Vacas Flacas');
-});
-
-// Usar las rutas de producción
 app.use('/api/produccion', productionRoutes);
 
-// Puerto
+app.use(express.static('frontend'));
+
 const PORT = process.env.PORT || 3000;
 
-// Escuchar en el puerto
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
