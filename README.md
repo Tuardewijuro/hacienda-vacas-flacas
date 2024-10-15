@@ -25,3 +25,6 @@ La documentación completa de la API está disponible en **Swagger** en la ruta 
 
 La aplicación está desplegada en Railway. Se puede acceder mediante el siguiente link:
 https://hacienda-vacas-flacas-production.up.railway.app/
+
+Video Explicacion:
+https://youtu.be/gVaPpq8wQ9E
